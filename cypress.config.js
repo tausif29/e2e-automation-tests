@@ -5,9 +5,7 @@ const addCucumberPreprocessorPlugin =
   require("@badeball/cypress-cucumber-preprocessor").addCucumberPreprocessorPlugin;
 const createEsbuildPlugin =
   require("@badeball/cypress-cucumber-preprocessor/esbuild").createEsbuildPlugin;
-/*const {
-  NodeModulesPolyfillPlugin,
-} = require("@esbuild-plugins/node-modules-polyfill");*/
+
 
 module.exports = defineConfig({
   e2e: {
