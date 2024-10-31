@@ -1,0 +1,23 @@
+{
+  "name": "e2e-automation-tests",
+  "version": "1.0.0",
+  "description": "e2e-automation-tests",
+  "main": "index.js",
+  "scripts": {
+    "cy:run": "npx cypress run --browser chrome",
+    "cy:open": "npx cypress open",
+    "cy:run-headed": "npx cypress run --browser chrome --headed"
+  },
+  "devDependencies": {
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.3",
+    "cypress": "^13.15.1",
+    "esbuild": "^0.24.0"
+  },
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^21.0.2",
+    "e2e-automation-tests": "file:"
+  },
+  "cypress-cucumber-preprocessor": {
+    "stepDefinitions": "cypress/e2e/stepDefinitions/**/*.{js,ts}"
+  }
+}
