@@ -1,2 +1,2 @@
 # e2e-automation-tests
-Cypress + Cucumber Example
+Cypress + Cucucumber 
